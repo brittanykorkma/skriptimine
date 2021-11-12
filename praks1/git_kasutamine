@@ -27,3 +27,17 @@ git status
 
 8. Koosta jälgivale failile commit - see on muudatuse kirjeldus
 git commit -m "muudatuse sõnaline kirjeldus"
+
+--- 9-10. remote - teeme korraks, et tekitada repo ja ühendus---
+
+9. Loo repo githubis - git@github.com:kasutaja/reponimi.git
+
+10. Loo remote ühendus githubi repoga
+git remote add ühendusenimi git@github.com:kasutaj/reponimi.git
+
+git remote -v 
+
+--- 11. remote - teeme korduvalt iga commit sooritamise pärast ---
+
+11. Lükka lokaalsed muudatused githubi
+git push -uf ühendusenimi master
